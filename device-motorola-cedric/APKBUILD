@@ -7,7 +7,7 @@ url="https://postmarketos.org"
 license="MIT"
 arch="aarch64"
 options="!check !archcheck"
-depends="postmarketos-base linux-motorola-cedric mkbootimg mesa-dri-swrast"
+depends="postmarketos-base linux-motorola-cedric mkbootimg mesa-dri-swrast msm-fb-refresher"
 makedepends="devicepkg-dev"
 source="deviceinfo"
 
@@ -19,5 +19,5 @@ package() {
 	devicepkg_package $startdir $pkgname
 }
 
-sha512sums="(run 'pmbootstrap checksum device-motorola-cedric' to fill)"
 
+sha512sums="fa095c74b9b0c2e5e0dc51c33b7a9feb18097f2841b48ab262f07e09b4c405fd4a03cee31c6cfe61e2830dbe923128d88bafc9ab547d5b2499e313b3c0eb0c13  deviceinfo"
